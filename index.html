@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo (2).png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D'Bayong Art - Your Daily Bayong Buddy</title>
-    <meta name="description" content="Discover unique, one-of-a-kind art pieces in our export quality pandan made bayong bags.">
-    <meta property="og:title" content="D'Bayong Art - Your Daily Bayong Buddy">
-    <meta property="og:description" content="Unique and One of its Kind art pieces in our export quality pandan made bayong bags.">
-    <meta property="og:image" content="images/your-preview-image.jpg">  <meta property="og:url" content="https://d-bayong-art.github.io/D-Bayong-Art/"> <link rel="stylesheet" href="style.css">
-</head>
+   <meta property="og:title" content="D'Bayong Art - Your Daily Bayong Buddy">
+<meta property="og:description" content="Unique and One of its Kind art pieces in our export quality pandan made bayong bags.">
+<meta property="og:image" content="https://d-bayong-art.github.io/D-Bayong-Art/logo (2).png">
+<meta property="og:url" content="https://d-bayong-art.github.io/D-Bayong-Art/">
+<meta property="og:type" content="website"> 
+<link rel="stylesheet" href="style.css">
     <style>
         * {
             margin: 0;
@@ -36,20 +36,20 @@
             background-color: transparent;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: flex-start; /* Align items to the left */
             position: absolute;
             top: 0;
             left: 0;
             z-index: 10;
             height: auto;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* For mobile responsiveness */
         }
 
         .logo-area {
             display: flex;
-            align-items: center;
+            align-items: center; /* Vertically align logo and text */
             margin-bottom: 0;
-            margin-right: 120px;
+            margin-right: 20px; /* Add space between logo area and nav */
         }
 
         .logo-area img {
@@ -64,14 +64,14 @@
             color: black;
             font-weight: 700;
             letter-spacing: 1px;
+            margin-right: 20px; /* Add space between logo text and nav */
         }
 
         .nav-links {
-            display: flex;
-            gap: 20px;
-            justify-content: flex-start;
+            display: flex; /* Arrange links horizontally */
+            gap: 20px; /* Space between links */
             margin-top: 0;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* For mobile responsiveness */
         }
 
         .nav-links a {
@@ -143,6 +143,89 @@
             text-align: left;
             letter-spacing: -0.02em;
         }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column; /* Stack logo and navigation */
+                align-items: center; /* Center items horizontally */
+                padding: 15px 20px; /* Adjust padding */
+                justify-content: flex-start; /* Align items to the top */
+                background-color: rgba(248, 244, 240, 0.95); /* Add a semi-transparent background */
+            }
+
+            .logo-area {
+                margin-bottom: 15px; /* Add space below the logo */
+                margin-right: 0; /* Remove right margin */
+                text-align: center; /* Center the logo elements */
+            }
+
+            .nav-links {
+                display: flex;
+                flex-direction: column; /* Stack navigation links vertically */
+                gap: 10px; /* Add space between links */
+                text-align: center; /* Center the links */
+                width: 100%; /* Make links take full width */
+                margin-top: 15px; /* Add some top margin to separate from the logo */
+            }
+
+            .nav-links a {
+                display: block; /* Make each link take full width for easier tapping */
+                padding: 10px 0; /* Adjust vertical padding, remove horizontal */
+                border-bottom: 1px solid #eee; /* Add a subtle separator */
+            }
+
+            .nav-links a:last-child {
+                border-bottom: none; /* Remove the bottom border from the last link */
+            }
+
+            .main-content {
+                height: auto; /* Adjust height for content flow */
+                padding-top: 120px; /* Adjust top padding to accommodate the navigation */
+                align-items: center; /* Center content horizontally */
+                text-align: center; /* Center text within main content */
+            }
+
+            .circle-overlay {
+                position: relative; /* Adjust positioning context */
+                top: auto; /* Reset top */
+                right: auto; /* Reset right */
+                width: 70%; /* Adjust width of the circular image */
+                margin: 20px auto; /* Center the image */
+                height: auto; /* Adjust height automatically */
+            }
+
+            .description-container {
+                position: relative; /* Adjust positioning context */
+                top: auto; /* Reset top */
+                left: auto; /* Reset left */
+                width: 90%; /* Adjust width of the description container */
+                margin: 20px auto; /* Center the container */
+                text-align: center; /* Center text within the container */
+                padding: 20px; /* Adjust padding */
+                background-color: rgba(248, 244, 240, 0.8); /* Keep a semi-transparent background */
+            }
+
+            .description-title {
+                font-size: 2.2em; /* Slightly smaller font size for better wrapping */
+                line-height: 1.1; /* Adjust line height for closer lines */
+                text-align: center; /* Center the title */
+            }
+
+            .description-text {
+                font-size: 1.1em; /* Further adjust text size for mobile */
+                line-height: 1.5; /* Improve readability with adjusted line height */
+                text-align: center; /* Center the text */
+                margin-bottom: 1em; /* Adjust bottom margin */
+            }
+
+            .get-in-touch-button {
+                padding: 15px 30px; /* Adjust button padding */
+                font-size: 1.1em; /* Adjust button font size */
+                margin-top: 20px; /* Adjust top margin */
+            }
+        }
+        
+
 
         .description-text {
             font-size: 2em;
@@ -307,7 +390,7 @@
         /* Contact Us Section Styles */
         .contact-us-section {
             background-color: #f8f4f0;
-            padding: 80px 40px;  /* Increased padding for prominence */
+            padding: 80px 40px;     /* Increased padding for prominence */
             text-align: center;
             border-top: 2px solid #e0dad3; /* Added border for separation */
             margin-top: 60px; /* Added margin to create space */
@@ -357,112 +440,11 @@
             text-decoration: none;
             color: #f4d03f;
             font-size: 2em; /* Increased font size */
-            transition: color 0.3s ease;
+            transition: color
         }
 
         .contact-social a:hover {
             color: #e5c12f;
-        }
-
-
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .logo-area {
-                margin-bottom: 20px;
-                margin-right: 0;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .main-content {
-                height: auto;
-            }
-
-            .circle-overlay {
-                top: 10%;
-                right: 0;
-                width: 80%;
-                height: 80%;
-            }
-
-            .description-container {
-                position: relative;
-                top: auto;
-                left: auto;
-                width: 90%;
-                margin: 20px auto;
-                text-align: center;
-            }
-
-            .description-title {
-                font-size: 3em;
-            }
-
-            .description-text {
-                font-size: 1.5em;
-            }
-
-            .category-section {
-                flex-direction: column;
-                text-align: center;
-                padding: 60px 20px;
-            }
-
-            .category-text {
-                width: 100%;
-                margin-bottom: 30px;
-                margin-right: 0;
-            }
-
-            .categories-title {
-                font-size: 3.5em;
-                letter-spacing: 0.03em;
-                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
-            }
-
-            .categories-description {
-                font-size: 1.2em;
-                letter-spacing: 0.01em;
-            }
-
-            .category-images {
-                width: 100%;
-                justify-content: center;
-                overflow-x: auto;
-                padding-bottom: 10px;
-                gap: 15px;
-            }
-
-            .image-container {
-                width: auto;
-                height: auto;
-                min-width: 200px;
-                max-height: 320px;
-                margin-bottom: 20px;
-            }
-
-            .bag-image {
-                max-height: 320px;
-            }
-
-            .artworks-title {
-                font-size: 3.5em;
-            }
-
-            .artworks-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-us-title{
-                font-size: 3em;
-            }
         }
     </style>
 </head>
@@ -487,8 +469,8 @@
         <div class="description-container">
             <h2 class="description-title">Carry a Masterpiece</h2>
             <p class="description-text">
-                Elevate your style with our handcrafted Bayong bags, <br>
-                where artistry meets everyday elegance.
+            Handcrafted, export quality pandan bayong bags.<br>
+              
             </p>
             <button class="get-in-touch-button">GET IN TOUCH</button>
         </div>
@@ -513,9 +495,6 @@
             </div>
             <div class="image-container">
                 <img src="category3.png" alt="Bayong Bag 5" class="bag-image">
-            </div>
-            <div class="image-container">
-                <img src="category4.png" alt="Bayong Bag 6" class="bag-image">
             </div>
         </div>
     </section>
